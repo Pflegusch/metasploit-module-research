@@ -1,0 +1,9 @@
+Platform, count
+cmd         ,7
+generic     ,1
+mipsbe      ,1
+mipsle      ,1
+php         ,1
+ruby        ,1
+x64         ,1
+x86         ,19
