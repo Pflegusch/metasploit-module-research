@@ -3,7 +3,16 @@ import matplotlib.pyplot as plt
 
 def generate_rankings_plot(module):
     data = pd.read_csv("../csv/" + module + ".csv")
-    df = pd.DataFrame(data, columns=["Rank"]).groupby(["Rank"])["Rank"].count()
+    df = pd.DataFrame(data, columns=["Rank"])
+
+    # Sort according to metasploit ranking score
+    rank_order = ["excellent", "great", "good", "normal", "average", "low", "manual"]
+
+    df.sort_values(by="Rank", key=lambda column: column.map(lambda e: rank_order.index(e)), inplace=True)
+    df = df.groupby(["Rank"])["Rank"].count()
+
+    # Reindex to add missing ranks and fill NaN values with 0
+    df = df.reindex(rank_order, fill_value=0)
 
     # Plot the data using bar() method
     ax = df.plot.bar(color="#00bc79") 
@@ -14,8 +23,8 @@ def generate_rankings_plot(module):
 
     # Rotate x labels
     plt.xticks(rotation=45)
-    
-    # # Save the plot
+
+    # Save the plot
     plt.tight_layout()
     plt.savefig(module + "/overall_ranking.png")
     plt.figure()
