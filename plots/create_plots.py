@@ -14,6 +14,9 @@ def generate_rankings_plot(module):
     # Reindex to add missing ranks and fill NaN values with 0
     df = df.reindex(rank_order, fill_value=0)
 
+    # Exclude bars with 0 value
+    df = df[df != 0]
+
     # Plot the data using bar() method
     ax = df.plot.bar(color="#00bc79") 
     ax.bar_label(ax.containers[0])
