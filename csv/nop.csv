@@ -1,0 +1,12 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","nop/aarch64/simple","","normal","No","Simple"
+"1","nop/armle/simple","","normal","No","Simple"
+"2","nop/cmd/generic","","normal","No","Generic Command Nop Generator"
+"3","nop/mipsbe/better","","normal","No","Better"
+"4","nop/php/generic","","normal","No","PHP Nop Generator"
+"5","nop/ppc/simple","","normal","No","Simple"
+"6","nop/sparc/random","","normal","No","SPARC NOP Generator"
+"7","nop/tty/generic","","normal","No","TTY Nop Generator"
+"8","nop/x64/simple","","normal","No","Simple"
+"9","nop/x86/opty2","","normal","No","Opty2"
+"10","nop/x86/single_byte","","normal","No","Single Byte"
