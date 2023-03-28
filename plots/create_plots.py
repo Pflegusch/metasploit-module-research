@@ -63,6 +63,7 @@ def generate_platform_ranking_plot(module):
 
     # Plot a stacked bar chart of the rank counts
     ax = df.plot(kind='bar', stacked=True)
+    handles, labels = ax.get_legend_handles_labels()
 
     ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
 
@@ -70,6 +71,7 @@ def generate_platform_ranking_plot(module):
     ax.set_xlabel('Rank')
     ax.set_ylabel('Count')
     ax.set_title('Platform ranking results for ' + module + ' modules')
+    plt.xticks(rotation=45)
 
     ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda y, _: '{:.0f}'.format(y)))
 
@@ -78,11 +80,11 @@ def generate_platform_ranking_plot(module):
     new_labels = [label.split('.')[0] for label in labels]
     ax.legend(handles=handles, labels=new_labels, fontsize=5)
 
-
     os.chdir(old_path)
     plt.tight_layout()
-    plt.savefig("platform/" + module + "/" + module + ".pdf")
-    plt.figure(dpi=1500)
+    plt.savefig("platform/" + module + "/" + module + ".pdf", dpi=1500, bbox_inches="tight")
+    plt.savefig("platform/" + module + "/" + module + ".png", dpi=300, bbox_inches="tight")
+    plt.figure()
 
 
 if __name__ == "__main__":
