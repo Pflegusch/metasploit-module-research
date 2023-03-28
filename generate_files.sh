@@ -5014,7 +5014,7 @@ extract_unique_platforms() {
 extract_overall_platforms_and_rankings() {
     mkdir -p platforms_ranking/platform_results/$1
     while IFS= read -r line; do
-        ../metasploit-framework/msfconsole -q -x "search type:$1 platform:$line -o platforms_ranking/platform_results/$1/$line.json; exit"
+        ../metasploit-framework/msfconsole -q -x "search type:$1 platform:$line -o platforms_ranking/platform_results/$1/$line.csv; exit"
     done < $2 
 }
 

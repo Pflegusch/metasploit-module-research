@@ -1,5 +1,8 @@
+import os
+import glob
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 
 def generate_rankings_plot(module):
     data = pd.read_csv("../csv/" + module + ".csv")
@@ -18,7 +21,7 @@ def generate_rankings_plot(module):
     df = df[df != 0]
 
     # Plot the data using bar() method
-    ax = df.plot.bar(color="#00bc79") 
+    ax = df.plot.bar()
     ax.bar_label(ax.containers[0])
     plt.title("Overall ranking of all " + module + " modules")
     plt.xlabel("Ranking")
@@ -29,10 +32,65 @@ def generate_rankings_plot(module):
 
     # Save the plot
     plt.tight_layout()
-    plt.savefig(module + "/overall_ranking.png")
+    plt.savefig(module + "/overall_ranking.pdf", dpi=1500)
     plt.figure()
+
+def generate_platform_ranking_plot(module):
+    path = "../platforms_ranking/platform_results/" + module + "/"
+
+    old_path = os.getcwd()
+    os.chdir(path)
+    csv_files = glob.glob("*.csv")
+
+    rank_counts = {}
+    for file in csv_files:
+        # Read in the CSV file using pandas
+        df = pd.read_csv(file)
+
+        # Count the number of different ranks in the 'Rank' column of the DataFrame
+        counts = df['Rank'].value_counts()
+
+        # Add the counts to the rank_counts dictionary
+        rank_counts[file] = counts
+
+    # Convert the rank_counts dictionary to a DataFrame
+    df = pd.DataFrame(rank_counts)
+    rank_order = ["excellent", "great", "good", "normal", "average", "low", "manual"]
+    df = df.reindex(rank_order)
+
+    df = df.loc[df.sum(axis=1) > 0]
+
+    # Plot a stacked bar chart of the rank counts
+    ax = df.plot(kind='bar', stacked=True)
+
+    ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+
+    # Set the axis labels and title
+    ax.set_xlabel('Rank')
+    ax.set_ylabel('Count')
+    ax.set_title('Platform ranking results for ' + module + ' modules')
+
+    ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda y, _: '{:.0f}'.format(y)))
+
+    # Relabel the color values
+    handles, labels = ax.get_legend_handles_labels()
+    new_labels = [label.split('.')[0] for label in labels]
+    ax.legend(handles=handles, labels=new_labels, fontsize=5)
+
+
+    os.chdir(old_path)
+    plt.tight_layout()
+    plt.savefig("platform/" + module + "/" + module + ".pdf")
+    plt.figure(dpi=1500)
+
 
 if __name__ == "__main__":
     modules = ["auxiliary", "encoder", "evasion", "exploit", "nop", "payload", "post"]
     for module in modules:
         generate_rankings_plot(module)
+        if module == "auxiliary": 
+            continue
+        generate_platform_ranking_plot(module)
+
+# TODO: Sort bar colors according to legend 
+# TODO: Set total bar height above bar
