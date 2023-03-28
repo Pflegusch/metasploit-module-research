@@ -33,6 +33,7 @@ def generate_rankings_plot(module):
     # Save the plot
     plt.tight_layout()
     plt.savefig(module + "/overall_ranking.pdf", dpi=1500)
+    plt.savefig(module + "/overall_ranking.png", dpi=300)
     plt.figure()
 
 def generate_platform_ranking_plot(module):
