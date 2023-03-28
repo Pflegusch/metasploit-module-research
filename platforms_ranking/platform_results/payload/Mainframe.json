@@ -1,0 +1,6 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/cmd/mainframe/generic_jcl","","normal","No","Generic JCL Test for Mainframe Exploits"
+"1","payload/cmd/mainframe/apf_privesc_jcl","","normal","No","JCL to Escalate Privileges"
+"2","payload/cmd/mainframe/bind_shell_jcl","","normal","No","Z/OS (MVS) Command Shell, Bind TCP"
+"3","payload/cmd/mainframe/reverse_shell_jcl","","normal","No","Z/OS (MVS) Command Shell, Reverse TCP"
+"4","payload/mainframe/shell_reverse_tcp","","normal","No","Z/OS (MVS) Command Shell, Reverse TCP Inline"

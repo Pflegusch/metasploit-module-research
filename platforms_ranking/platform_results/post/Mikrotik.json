@@ -1,0 +1,3 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","post/networking/gather/enum_mikrotik","","normal","No","Mikrotik Gather Device General Information"
+"1","post/multi/recon/local_exploit_suggester","","normal","No","Multi Recon Local Exploit Suggester"

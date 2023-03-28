@@ -1,0 +1,6 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","post/aix/hashdump","","normal","No","AIX Gather Dump Password Hashes"
+"1","post/multi/recon/local_exploit_suggester","","normal","No","Multi Recon Local Exploit Suggester"
+"2","post/multi/manage/sudo","","normal","No","Multiple Linux / Unix Post Sudo Upgrade Shell"
+"3","post/multi/gather/unix_cached_ad_hashes","","normal","No","UNIX Gather Cached AD Hashes"
+"4","post/multi/gather/unix_kerberos_tickets","","normal","No","UNIX Gather Kerberos Tickets"

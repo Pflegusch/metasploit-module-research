@@ -1,0 +1,7 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","encoder/cmd/brace","","low","No","Bash Brace Expansion Command Encoder"
+"1","encoder/cmd/ifs","","low","No","Bourne ${IFS} Substitution Command Encoder"
+"2","encoder/cmd/echo","","good","No","Echo Command Encoder"
+"3","encoder/cmd/generic_sh","","manual","No","Generic Shell Variable Substitution Command Encoder"
+"4","encoder/cmd/perl","","normal","No","Perl Command Encoder"
+"5","encoder/cmd/printf_php_mq","","manual","No","printf(1) via PHP magic_quotes Utility Command Encoder"

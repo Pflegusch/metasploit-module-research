@@ -1,0 +1,10 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/multi/meterpreter/reverse_http","","normal","No","Architecture-Independent Meterpreter Stage, Reverse HTTP Stager (Multiple Architectures)"
+"1","payload/multi/meterpreter/reverse_https","","normal","No","Architecture-Independent Meterpreter Stage, Reverse HTTPS Stager (Multiple Architectures)"
+"2","payload/nodejs/shell_bind_tcp","","normal","No","Command Shell, Bind TCP (via nodejs)"
+"3","payload/nodejs/shell_reverse_tcp","","normal","No","Command Shell, Reverse TCP (via nodejs)"
+"4","payload/nodejs/shell_reverse_tcp_ssl","","normal","No","Command Shell, Reverse TCP SSL (via nodejs)"
+"5","payload/generic/custom","","normal","No","Custom Payload"
+"6","payload/generic/shell_bind_tcp","","normal","No","Generic Command Shell, Bind TCP Inline"
+"7","payload/generic/shell_reverse_tcp","","normal","No","Generic Command Shell, Reverse TCP Inline"
+"8","payload/generic/ssh/interact","","normal","No","Interact with Established SSH Connection"

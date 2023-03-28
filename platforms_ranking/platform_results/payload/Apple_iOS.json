@@ -1,0 +1,8 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/apple_ios/aarch64/shell_reverse_tcp","","normal","No","Apple iOS aarch64 Command Shell, Reverse TCP Inline"
+"1","payload/apple_ios/aarch64/meterpreter_reverse_http","","normal","No","Apple_iOS Meterpreter, Reverse HTTP Inline"
+"2","payload/apple_ios/armle/meterpreter_reverse_http","","normal","No","Apple_iOS Meterpreter, Reverse HTTP Inline"
+"3","payload/apple_ios/aarch64/meterpreter_reverse_https","","normal","No","Apple_iOS Meterpreter, Reverse HTTPS Inline"
+"4","payload/apple_ios/armle/meterpreter_reverse_https","","normal","No","Apple_iOS Meterpreter, Reverse HTTPS Inline"
+"5","payload/apple_ios/aarch64/meterpreter_reverse_tcp","","normal","No","Apple_iOS Meterpreter, Reverse TCP Inline"
+"6","payload/apple_ios/armle/meterpreter_reverse_tcp","","normal","No","Apple_iOS Meterpreter, Reverse TCP Inline"

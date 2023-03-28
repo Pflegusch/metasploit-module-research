@@ -1,0 +1,33 @@
+[0m
+Matching Modules
+================
+
+   #   Name                 Disclosure Date  Rank    Check  Description
+   -   ----                 ---------------  ----    -----  -----------
+   0   nop/mipsbe/better                     normal  No     Better
+   1   nop/cmd/generic                       normal  No     Generic Command Nop Generator
+   2   nop/x86/opty2                         normal  No     Opty2
+   3   nop/php/generic                       normal  No     PHP Nop Generator
+   4   nop/sparc/random                      normal  No     SPARC NOP Generator
+   5   nop/aarch64/simple                    normal  No     Simple
+   6   nop/armle/simple                      normal  No     Simple
+   7   nop/ppc/simple                        normal  No     Simple
+   8   nop/x64/simple                        normal  No     Simple
+   9   nop/x86/single_byte                   normal  No     Single Byte
+   10  nop/tty/generic                       normal  No     TTY Nop Generator
+
+
+Interact with a module by name or index. For example [32minfo 10[0m, [32muse 10[0m or [32muse nop/tty/generic[0m
+
+[0m{"platform":"All","arch":"mipsbe","references":null,"name":"Better","fullname":"nop/mipsbe/better","authors":["jm"],"rank":"Normal","description":"Better NOP generator","options":[]}
+[0m{"platform":"All","arch":"cmd","references":null,"name":"Generic Command Nop Generator","fullname":"nop/cmd/generic","authors":["hdm \u003cx@hdm.io\u003e","bcoles \u003cbcoles@gmail.com\u003e"],"rank":"Normal","description":"Generates harmless padding for command payloads.","options":[]}
+[0m{"platform":"All","arch":"x86","references":null,"name":"Opty2","fullname":"nop/x86/opty2","authors":["spoonm \u003cspoonm@no$email.com\u003e","optyx \u003coptyx@no$email.com\u003e"],"rank":"Normal","description":"Opty2 multi-byte NOP generator","options":[]}
+[0m{"platform":"All","arch":"php","references":null,"name":"PHP Nop Generator","fullname":"nop/php/generic","authors":["hdm \u003cx@hdm.io\u003e"],"rank":"Normal","description":"Generates harmless padding for PHP scripts","options":[]}
+[0m{"platform":"All","arch":"sparc","references":null,"name":"SPARC NOP Generator","fullname":"nop/sparc/random","authors":["vlad902 \u003cvlad902@gmail.com\u003e"],"rank":"Normal","description":"SPARC NOP generator","options":[]}
+[0m{"platform":"All","arch":"aarch64","references":null,"name":"Simple","fullname":"nop/aarch64/simple","authors":[],"rank":"Normal","description":"Simple NOP generator","options":[]}
+[0m{"platform":"All","arch":"armle","references":null,"name":"Simple","fullname":"nop/armle/simple","authors":["hdm \u003cx@hdm.io\u003e"],"rank":"Normal","description":"Simple NOP generator","options":[]}
+[0m{"platform":"All","arch":"ppc","references":null,"name":"Simple","fullname":"nop/ppc/simple","authors":["hdm \u003cx@hdm.io\u003e"],"rank":"Normal","description":"Simple NOP generator","options":[]}
+[0m{"platform":"All","arch":"x64","references":null,"name":"Simple","fullname":"nop/x64/simple","authors":["sf \u003cstephen_fewer@harmonysecurity.com\u003e"],"rank":"Normal","description":"An x64 single/multi byte NOP instruction generator.","options":[]}
+[0m{"platform":"All","arch":"x86","references":null,"name":"Single Byte","fullname":"nop/x86/single_byte","authors":["spoonm \u003cspoonm@no$email.com\u003e"],"rank":"Normal","description":"Single-byte NOP generator","options":[]}
+[0m{"platform":"All","arch":"tty","references":null,"name":"TTY Nop Generator","fullname":"nop/tty/generic","authors":["hdm \u003cx@hdm.io\u003e"],"rank":"Normal","description":"Generates harmless padding for TTY input","options":[]}
+[0m

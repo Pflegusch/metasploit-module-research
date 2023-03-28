@@ -1,0 +1,10 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/android/meterpreter_reverse_http","","normal","No","Android Meterpreter Shell, Reverse HTTP Inline"
+"1","payload/android/meterpreter_reverse_https","","normal","No","Android Meterpreter Shell, Reverse HTTPS Inline"
+"2","payload/android/meterpreter_reverse_tcp","","normal","No","Android Meterpreter Shell, Reverse TCP Inline"
+"3","payload/android/meterpreter/reverse_http","","normal","No","Android Meterpreter, Android Reverse HTTP Stager"
+"4","payload/android/meterpreter/reverse_https","","normal","No","Android Meterpreter, Android Reverse HTTPS Stager"
+"5","payload/android/meterpreter/reverse_tcp","","normal","No","Android Meterpreter, Android Reverse TCP Stager"
+"6","payload/android/shell/reverse_http","","normal","No","Command Shell, Android Reverse HTTP Stager"
+"7","payload/android/shell/reverse_https","","normal","No","Command Shell, Android Reverse HTTPS Stager"
+"8","payload/android/shell/reverse_tcp","","normal","No","Command Shell, Android Reverse TCP Stager"

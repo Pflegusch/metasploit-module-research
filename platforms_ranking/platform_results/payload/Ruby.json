@@ -1,0 +1,13 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/multi/meterpreter/reverse_http","","normal","No","Architecture-Independent Meterpreter Stage, Reverse HTTP Stager (Multiple Architectures)"
+"1","payload/multi/meterpreter/reverse_https","","normal","No","Architecture-Independent Meterpreter Stage, Reverse HTTPS Stager (Multiple Architectures)"
+"2","payload/generic/custom","","normal","No","Custom Payload"
+"3","payload/generic/shell_bind_tcp","","normal","No","Generic Command Shell, Bind TCP Inline"
+"4","payload/generic/shell_reverse_tcp","","normal","No","Generic Command Shell, Reverse TCP Inline"
+"5","payload/generic/ssh/interact","","normal","No","Interact with Established SSH Connection"
+"6","payload/ruby/shell_bind_tcp","","normal","No","Ruby Command Shell, Bind TCP"
+"7","payload/ruby/shell_bind_tcp_ipv6","","normal","No","Ruby Command Shell, Bind TCP IPv6"
+"8","payload/ruby/shell_reverse_tcp","","normal","No","Ruby Command Shell, Reverse TCP"
+"9","payload/ruby/shell_reverse_tcp_ssl","","normal","No","Ruby Command Shell, Reverse TCP SSL"
+"10","payload/ruby/pingback_bind_tcp","","normal","No","Ruby Pingback, Bind TCP"
+"11","payload/ruby/pingback_reverse_tcp","","normal","No","Ruby Pingback, Reverse TCP"

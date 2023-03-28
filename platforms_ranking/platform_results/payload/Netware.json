@@ -1,0 +1,2 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/netware/shell/reverse_tcp","","normal","No","NetWare Command Shell, Reverse TCP Stager"

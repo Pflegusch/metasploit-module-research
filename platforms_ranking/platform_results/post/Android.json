@@ -1,0 +1,13 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","post/android/gather/hashdump","","normal","No","Android Gather Dump Password Hashes for Android Systems"
+"1","post/android/manage/remove_lock_root","","normal","No","Android Root Remove Device Locks (root)"
+"2","post/android/capture/screen","","normal","No","Android Screen Capture"
+"3","post/android/manage/remove_lock","2013-10-11","normal","No","Android Settings Remove Device Locks (4.0-4.3)"
+"4","post/android/gather/wireless_ap","","normal","No","Displays wireless SSIDs and PSKs"
+"5","post/android/local/koffee","2020-12-02","normal","No","KOFFEE - Kia OFFensivE Exploit"
+"6","post/multi/manage/set_wallpaper","","normal","No","Multi Manage Set Wallpaper"
+"7","post/multi/manage/play_youtube","","normal","No","Multi Manage YouTube Broadcast"
+"8","post/multi/recon/local_exploit_suggester","","normal","No","Multi Recon Local Exploit Suggester"
+"9","post/multi/gather/enum_software_versions","","normal","No","Multiplatform Installed Software Version Enumerator"
+"10","post/multi/gather/wlan_geolocate","","normal","No","Multiplatform WLAN Enumeration and Geolocation"
+"11","post/android/gather/sub_info","","normal","No","extracts subscriber info from target device"

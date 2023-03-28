@@ -1,0 +1,10 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/bsdi/x86/shell_bind_tcp","","normal","No","BSDi Command Shell, Bind TCP Inline"
+"1","payload/bsdi/x86/shell/bind_tcp","","normal","No","BSDi Command Shell, Bind TCP Stager"
+"2","payload/bsdi/x86/shell_find_port","","normal","No","BSDi Command Shell, Find Port Inline"
+"3","payload/bsdi/x86/shell_reverse_tcp","","normal","No","BSDi Command Shell, Reverse TCP Inline"
+"4","payload/bsdi/x86/shell/reverse_tcp","","normal","No","BSDi Command Shell, Reverse TCP Stager"
+"5","payload/generic/debug_trap","","normal","No","Generic x86 Debug Trap"
+"6","payload/generic/tight_loop","","normal","No","Generic x86 Tight Loop"
+"7","payload/cmd/windows/powershell/generic/debug_trap","","normal","No","Powershell Exec, Generic x86 Debug Trap"
+"8","payload/cmd/windows/powershell/generic/tight_loop","","normal","No","Powershell Exec, Generic x86 Tight Loop"

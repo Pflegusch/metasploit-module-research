@@ -1,0 +1,5 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/aix/ppc/shell_bind_tcp","","normal","No","AIX Command Shell, Bind TCP Inline"
+"1","payload/aix/ppc/shell_find_port","","normal","No","AIX Command Shell, Find Port Inline"
+"2","payload/aix/ppc/shell_reverse_tcp","","normal","No","AIX Command Shell, Reverse TCP Inline"
+"3","payload/aix/ppc/shell_interact","","normal","No","AIX execve Shell for inetd"

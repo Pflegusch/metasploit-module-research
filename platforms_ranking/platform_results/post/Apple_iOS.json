@@ -1,0 +1,4 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","post/multi/recon/local_exploit_suggester","","normal","No","Multi Recon Local Exploit Suggester"
+"1","post/apple_ios/gather/ios_image_gather","","normal","No","iOS Image Gatherer"
+"2","post/apple_ios/gather/ios_text_gather","","normal","No","iOS Text Gatherer"

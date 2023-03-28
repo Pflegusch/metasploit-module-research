@@ -1,0 +1,13 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","payload/generic/debug_trap","","normal","No","Generic x86 Debug Trap"
+"1","payload/generic/tight_loop","","normal","No","Generic x86 Tight Loop"
+"2","payload/java/jsp_shell_bind_tcp","","normal","No","Java JSP Command Shell, Bind TCP Inline"
+"3","payload/java/jsp_shell_reverse_tcp","","normal","No","Java JSP Command Shell, Reverse TCP Inline"
+"4","payload/cmd/windows/powershell/generic/debug_trap","","normal","No","Powershell Exec, Generic x86 Debug Trap"
+"5","payload/cmd/windows/powershell/generic/tight_loop","","normal","No","Powershell Exec, Generic x86 Tight Loop"
+"6","payload/solaris/sparc/shell_bind_tcp","","normal","No","Solaris Command Shell, Bind TCP Inline"
+"7","payload/solaris/x86/shell_bind_tcp","","normal","No","Solaris Command Shell, Bind TCP Inline"
+"8","payload/solaris/sparc/shell_find_port","","normal","No","Solaris Command Shell, Find Port Inline"
+"9","payload/solaris/x86/shell_find_port","","normal","No","Solaris Command Shell, Find Port Inline"
+"10","payload/solaris/sparc/shell_reverse_tcp","","normal","No","Solaris Command Shell, Reverse TCP Inline"
+"11","payload/solaris/x86/shell_reverse_tcp","","normal","No","Solaris Command Shell, Reverse TCP Inline"

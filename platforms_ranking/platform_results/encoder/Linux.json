@@ -1,0 +1,2 @@
+#,Name,Disclosure Date,Rank,Check,Description
+"0","encoder/x64/xor_context","","normal","No","Hostname-based Context Keyed Payload Encoder"
