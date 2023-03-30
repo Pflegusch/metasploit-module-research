@@ -78,7 +78,11 @@ def generate_platform_ranking_plot(module):
     # Relabel the color values
     handles, labels = ax.get_legend_handles_labels()
     new_labels = [label.split('.')[0] for label in labels]
-    ax.legend(handles=handles, labels=new_labels, fontsize=5)
+    if module == "post":
+        ax.legend(handles=handles, labels=new_labels, fontsize=4)
+    else:
+        ax.legend(handles=handles, labels=new_labels, fontsize=6)        
+
 
     os.chdir(old_path)
     plt.tight_layout()
