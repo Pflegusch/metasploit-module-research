@@ -4,6 +4,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+def create_latex_tables(df, slice_beg, slice_end):
+    # To create the latex tables
+    df_tmp = df.fillna(0).iloc[:, slice_beg:slice_end]
+    print(df_tmp.to_latex())
+
 def generate_rankings_plot(module):
     data = pd.read_csv("../csv/" + module + ".csv")
     df = pd.DataFrame(data, columns=["Rank"])
