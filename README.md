@@ -1,7 +1,6 @@
 # metasploit-module-research
-A small repository that tries to visualize the different kind of modules in Metasploit and their associated ranking.
+A small repository that tries to visualize the different kind of modules in Metasploit and their associated ranking. Furthermore, a visualization in form of plots is provided to see how the different modules are ranked and which platforms they target.
 
-# TODO Add Description - for now only results
 ## Auxiliary modules
 ![alt text](https://github.com/Pflegusch/metasploit-module-research/blob/main/plots/auxiliary/overall_ranking.png?raw=true)
 
