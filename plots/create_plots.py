@@ -73,8 +73,8 @@ def generate_platform_ranking_plot(module):
     ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
 
     # Set the axis labels and title
-    ax.set_xlabel('Rank')
-    ax.set_ylabel('Count')
+    ax.set_xlabel('Ranking')
+    ax.set_ylabel('Number of modules')
     ax.set_title('Platform ranking results for ' + module + ' modules')
     plt.xticks(rotation=45)
 
